@@ -41,7 +41,7 @@ extension Article {
         
         var parameters: Parameters? {
             switch self {
-            case .list: return ["api-key":"khv7rDY89ipce7GPtF3DGKL27Mi81c3h"]
+            case .list: return ["api-key":Constants.AppKey]
             }
         }
     }

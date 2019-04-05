@@ -16,6 +16,7 @@
 		1370954D22567FBE0034F7A9 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370954B22567FBE0034F7A9 /* ArticleTableViewCell.swift */; };
 		1370954E22567FBE0034F7A9 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1370954C22567FBE0034F7A9 /* ArticleTableViewCell.xib */; };
 		1370955022568C6A0034F7A9 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370954F22568C6A0034F7A9 /* ThemeManager.swift */; };
+		1370955222574A9D0034F7A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1370955122574A9D0034F7A9 /* Constants.swift */; };
 		13752A1B225519EF00B42C4C /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13752A1A225519EF00B42C4C /* ArticlesViewController.swift */; };
 		13752A232255397600B42C4C /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13752A222255397600B42C4C /* Article.swift */; };
 		13752A2722553CD100B42C4C /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13752A2522553CD100B42C4C /* Requestable.swift */; };
@@ -60,6 +61,7 @@
 		1370954B22567FBE0034F7A9 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		1370954C22567FBE0034F7A9 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
 		1370954F22568C6A0034F7A9 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		1370955122574A9D0034F7A9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		13752A1A225519EF00B42C4C /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		13752A222255397600B42C4C /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		13752A2522553CD100B42C4C /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				13082CA12255184200E9B728 /* LaunchScreen.storyboard */,
 				13082CA42255184200E9B728 /* Info.plist */,
 				1370954F22568C6A0034F7A9 /* ThemeManager.swift */,
+				1370955122574A9D0034F7A9 /* Constants.swift */,
 			);
 			path = NYTimesArticle;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				13082C992255184000E9B728 /* AppDelegate.swift in Sources */,
 				13752A1B225519EF00B42C4C /* ArticlesViewController.swift in Sources */,
 				1370954D22567FBE0034F7A9 /* ArticleTableViewCell.swift in Sources */,
+				1370955222574A9D0034F7A9 /* Constants.swift in Sources */,
 				1370955022568C6A0034F7A9 /* ThemeManager.swift in Sources */,
 				13752A2A225546D100B42C4C /* ServiceManager.swift in Sources */,
 				13752A2D2256645700B42C4C /* ArticleDetailViewController.swift in Sources */,
