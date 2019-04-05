@@ -1,0 +1,6 @@
+module Pods_NYTimesArticleTests {
+  umbrella header "Pods-NYTimesArticleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

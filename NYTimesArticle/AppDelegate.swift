@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  NYTimesArticle
 //
-//  Created by sajeev Raj on 4/3/19.
+//  Created by Sajeev Raj on  4/3/19
 //  Copyright © 2019 Sajeev. All rights reserved.
 //
 

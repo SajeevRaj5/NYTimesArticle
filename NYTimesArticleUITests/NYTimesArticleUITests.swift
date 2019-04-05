@@ -2,33 +2,43 @@
 //  NYTimesArticleUITests.swift
 //  NYTimesArticleUITests
 //
-//  Created by sajeev Raj on 4/3/19.
+//  Created by Sajeev Raj on  4/3/19
 //  Copyright © 2019 Sajeev. All rights reserved.
 //
 
 import XCTest
 
 class NYTimesArticleUITests: XCTestCase {
-
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testClickArticleCell() {
+        
+        let app = XCUIApplication()
+        let tablesQuery = app.tables
+        let count = tablesQuery.cells.count
+        let exists = NSPredicate(format: "count >= 0")
+        
+        // wait fo the api resoponse for 10 sec
+        expectation(for: exists, evaluatedWith: tablesQuery, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
+        
+        // get the page title
+        let detailsPageIdentifier = app.descendants(matching: .navigationBar).element.identifier
+        
+        // select each article, go to the details and come back to article listing
+        for index in 0..<tablesQuery.cells.count {
+            // in listing page
+            tablesQuery.cells.element(boundBy: index).tap()
+            
+            // in details page
+            let nyTimesMostPopularButton = app.navigationBars[detailsPageIdentifier].buttons[detailsPageIdentifier]
+            
+            // go to previous listing screen
+            nyTimesMostPopularButton.tap()
+        }
     }
-
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
 }
